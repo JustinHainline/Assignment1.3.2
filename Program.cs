@@ -15,7 +15,7 @@
             Console.WriteLine(" ");
             for (int i = 0; i < (myArray.Length / 2); i++)
             {
-                temp += myArray[i];
+                temp = myArray[i];
                 myArray[i] = myArray[myArray.Length - 1 - i];
                 myArray[myArray.Length - i - 1] = temp;
             }
@@ -23,7 +23,12 @@
             foreach (int i in myArray)
             {
                 Console.WriteLine(i);
+
+                Console.WriteLine(" ");
+                //this is a comment
+
             }
+            
         }
     }
 }
